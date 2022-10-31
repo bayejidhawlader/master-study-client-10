@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { Navigate, useLocation } from "react-router";
-import { AuthContext } from "../firebase/UserContext";
 import Spinner from "react-bootstrap/Spinner";
+import { AuthContext } from "../firebase/UserContext";
+import { Navigate, useLocation } from "react-router";
 
 const PrivateRoute = ({ children }) => {
   const location = useLocation();
@@ -9,7 +9,7 @@ const PrivateRoute = ({ children }) => {
   if (loading) {
     return (
       <Spinner animation="border" role="status">
-        <span className="visually-hidden">Loading</span>
+        <p className="visually-hidden">Loadings......</p>
       </Spinner>
     );
   }

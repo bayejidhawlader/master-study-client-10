@@ -24,7 +24,7 @@ const Login = () => {
     const password = from.password.value;
     // console.log(email,PhotoURL, password, name);
 
-    SignUp(email, password)
+    SignUp(name, email, password)
       .then((result) => {
         const user = result.user;
         console.log(user);

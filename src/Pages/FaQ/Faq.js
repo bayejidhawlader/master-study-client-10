@@ -17,33 +17,25 @@ const Faq = () => {
       </div>
       <br />
       <div className="bg-danger p-4 text-white rounded ">
-        <p>Saves time ?</p>
+        <p>How do I select a course?</p>
         <p>
-          This reason might be the most obvious, but it’s a clear benefit of an
-          FAQ page. Not only does the FAQ page save customers time, but it also
-          saves employees time as well. Having an FAQ page ensures customers
-          dont have to sit on the phone for hours waiting for simple answers and
-          employees don’t have to individually answer all questions. Companies
-          dedicate a large portion of their budgets to customer service teams.
-          When these teams dont have to focus on answering the frequently asked
-          questions, they can serve other customer issues in a more timely
-          manner
+          Visit the course catalog to browse our offerings. In addition to
+          searching by course duration and availability, you can also search by
+          subject to ensure you find a course that reflects your interests.
+          Though it is not required, we encourage those who have not studied art
+          before to consider taking an art history course first to get a solid
+          grounding in the discipline before exploring more specific
+          disciplines. Our art history courses are the perfect first step before
+          moving on to art market courses.
         </p>
       </div>
       <br />
       <div className="bg-danger p-4 text-white rounded ">
-        <p>What other oftions do you have to implement Authtication ?</p>
+        <p>I am a high school student, can I join?</p>
         <p>
-          5 Common Authentication Types: 1.Password-based authentication.
-          Passwords are the most common methods of authentication. ...
-          <br />
-          2.Multi-factor authentication. ...
-          <br />
-          3.Certificate-based authentication. ...
-          <br />
-          4.Biometric authentication. ...
-          <br />
-          5.Token-based authentication.
+          Courses are open to all students 18 years or older. If you are under
+          18 years old, please contact us (online@sothebysinstitute.com) to
+          discuss further.
         </p>
       </div>
       <br />

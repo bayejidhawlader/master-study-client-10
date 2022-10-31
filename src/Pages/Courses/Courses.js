@@ -1,10 +1,10 @@
-import { Col, Container, Row } from "react-bootstrap";
 import { useLoaderData } from "react-router";
+import { Col, Container, Row } from "react-bootstrap";
 import Cards from "./Cards";
 
 const Courses = () => {
   const program = useLoaderData();
-  // console.log(program)
+
   return (
     <Container>
       <Row>

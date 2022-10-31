@@ -27,12 +27,12 @@ function App() {
         },
 
         {
-          path: "/blog",
-          element: <Blog></Blog>,
-        },
-        {
           path: "/",
           element: <Home></Home>,
+        },
+        {
+          path: "/blog",
+          element: <Blog></Blog>,
         },
         {
           path: "/faq",
@@ -67,8 +67,12 @@ function App() {
       ],
     },
     {
-      path: "/",
-      element: <p>P Not found --- 404</p>,
+      path: "/*",
+      element: (
+        <span className="bg-warning p-5 text-bold text-center">
+          404 Not found
+        </span>
+      ),
     },
   ]);
   return (

@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 import "./Cards.css";
 const Cards = ({ pro }) => {
   const { name, picture, title, price, _id } = pro;
-  // console.log(pro);
-  //
+
   return (
     <Container className="">
       <Row className="mb-3">

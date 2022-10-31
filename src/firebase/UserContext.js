@@ -1,9 +1,9 @@
 import React, { createContext, useEffect, useState } from "react";
 import {
-  createUserWithEmailAndPassword,
-  getAuth,
   onAuthStateChanged,
   signInWithPopup,
+  createUserWithEmailAndPassword,
+  getAuth,
   signOut,
   updateProfile,
 } from "firebase/auth";
@@ -51,9 +51,9 @@ const UserContext = ({ children }) => {
     user: user,
     loading,
     logOut,
-    SignUp,
     updateUserProfile,
     GoogleProvider,
+    SignUp,
     GithubProvider,
   };
   return (
