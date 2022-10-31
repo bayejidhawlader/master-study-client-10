@@ -1,28 +1,41 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { AuthContext } from "../firebase/UserContext";
 
 const Register = () => {
-  const { SignUp } = useContext(AuthContext);
+  const { SignUp, updateUserProfile } = useContext(AuthContext);
+  const [error, setError] = useState("");
 
   const handelSubmit = (event) => {
     event.preventDefault();
     const from = event.target;
     const name = from.name.value;
     const email = from.email.value;
+    const photoURL = from.PhotoURL.value;
     const password = from.password.value;
-    console.log(email, password, name);
+    console.log(name, email, password);
 
     SignUp(email, password, name)
       .then((result) => {
         const user = result.user;
         console.log(user);
         from.reset();
+        handleUpdateUserProfile(name, photoURL);
       })
       .catch((error) => {
         console.error("error", error);
       });
+  };
+
+  const handleUpdateUserProfile = (name, photoURL) => {
+    const profile = {
+      displayName: name,
+      photoURL: photoURL,
+    };
+    updateUserProfile(profile)
+      .then(() => {})
+      .catch((errror) => console.error(error));
   };
 
   return (
@@ -34,8 +47,14 @@ const Register = () => {
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Control type="text" name="name" placeholder="Enter Name " />
       </Form.Group>
+
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Control type="email" name="email" placeholder="Enter email " />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Photo URL</Form.Label>
+        <Form.Control name="PhotoURL" type="text" placeholder="Photo URL" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">

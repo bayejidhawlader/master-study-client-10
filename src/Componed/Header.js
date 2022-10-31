@@ -38,7 +38,7 @@ const Header = () => {
               {user?.uid ? (
                 <button onClick={logOut} className="btn btn-warning">
                   {" "}
-                  <Link to="/signout">SignOut</Link>{" "}
+                  <Link to="/">SignOut</Link>{" "}
                 </button>
               ) : (
                 <div>

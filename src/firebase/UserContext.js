@@ -5,6 +5,7 @@ import {
   onAuthStateChanged,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import app from "../Users/UserContext.Config";
 
@@ -21,6 +22,10 @@ const UserContext = ({ children }) => {
 
   const logOut = () => {
     return signOut(auth);
+  };
+
+  const updateUserProfile = (profile) => {
+    return updateProfile(auth.currentUser, profile);
   };
 
   const GoogleProvider = (provider) => {
@@ -47,6 +52,7 @@ const UserContext = ({ children }) => {
     loading,
     logOut,
     SignUp,
+    updateUserProfile,
     GoogleProvider,
     GithubProvider,
   };

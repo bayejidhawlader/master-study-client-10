@@ -1,5 +1,5 @@
 import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../firebase/UserContext";
 import Button from "react-bootstrap/Button";
@@ -21,19 +21,21 @@ const Login = () => {
     const name = from.name.value;
     const email = from.email.value;
     const password = from.password.value;
-    console.log(email, password, name);
+    // console.log(email,PhotoURL, password, name);
 
     SignUp(email, password)
       .then((result) => {
         const user = result.user;
         console.log(user);
         from.reset();
+
         navigate(from, { replace: true });
       })
       .catch((error) => {
         console.error("error", error);
       });
   };
+
   const handelGoogleSingIn = () => {
     GoogleProvider(GoogleSignIn)
       .then((result) => {
@@ -73,6 +75,7 @@ const Login = () => {
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Control type="password" name="password" placeholder="Password" />
       </Form.Group>
+
       <Form.Group className="mb-3" controlId="formBasicCheckbox"></Form.Group>
       <Button className="w-100 mb-3" variant="warning" type="submit">
         Log In
