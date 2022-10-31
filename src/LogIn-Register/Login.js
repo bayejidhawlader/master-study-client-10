@@ -64,7 +64,7 @@ const Login = () => {
       onSubmit={handelLogIn}
       className="w-50 bg-dark mt-5 p-4 rounded m-auto "
     >
-      <h1 className="text-white text-center">Log In </h1>
+      <h2 className="text-white text-center">Log In </h2>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Control
           type="email"

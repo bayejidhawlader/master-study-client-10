@@ -43,7 +43,7 @@ const Register = () => {
       onSubmit={handelSubmit}
       className="w-50 mt-5 bg-dark p-4 rounded m-auto "
     >
-      <h1 className=" text-center text-white p-2">Sign Up </h1>
+      <h2 className=" text-center text-white p-2">Sign Up </h2>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Control type="text" name="name" placeholder="Enter Name " />
       </Form.Group>
