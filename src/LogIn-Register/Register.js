@@ -60,6 +60,7 @@ const Register = () => {
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Control type="password" name="password" placeholder="Password " />
       </Form.Group>
+
       <Form.Group className="mb-3" controlId="formBasicCheckbox"></Form.Group>
       <Button variant="warning" type="submit">
         Sing Up

@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../firebase/UserContext";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -80,6 +81,14 @@ const Login = () => {
       <Button className="w-100 mb-3" variant="warning" type="submit">
         Log In
       </Button>
+
+      <Link to="/signup" className="text-decoration-none">
+        <p className="text-warning text-center pb-4">
+          Are you new? please
+          <Button className="btn-warning w-100">register</Button>
+        </p>
+      </Link>
+
       <button
         onClick={handelGoogleSingIn}
         className="btn btn-outline-warning w-100 mb-3"
