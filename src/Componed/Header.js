@@ -5,7 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../firebase/UserContext";
 import { FaToggleOff } from "react-icons/fa";
-import Home from "./Home";
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -52,6 +51,7 @@ const Header = () => {
                 </div>
               )}
 
+              {/* Dark / Light */}
               <Nav.Link eventKey={2} href="">
                 <FaToggleOff className="fs-2"></FaToggleOff>
               </Nav.Link>
