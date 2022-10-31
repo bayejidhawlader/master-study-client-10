@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const AllCourse = () => {
   const course = useLoaderData();
-  const { picture, name, title, details, _id } = course;
+  const { name, picture, title, details, _id } = course;
   return (
     <div>
       <Card style={{}}>

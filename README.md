@@ -1,6 +1,6 @@
 # I have created an e-learning website called Master Study
 
-This project was bootstrapped with [Create React App](https://assinment-master-sudy.web.app/).
+[Master Study.](https://assinment-master-sudy.web.app/).
 
 ## Available Scripts
 

@@ -2,19 +2,21 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
-import "./Cards.css";
+import "./Card.css";
 const Cards = ({ pro }) => {
-  const { name, picture, title, _id } = pro;
+  const { name, picture, title, price, _id } = pro;
   // console.log(pro);
+  //
   return (
     <Container className="">
-      <Row className="mb-4">
+      <Row className="mb-3">
         <Col className="d-none d-lg-block border border-2">
           <h3>{name}</h3>
           <p>{title}</p>
+          <p>{price}</p>
         </Col>
-        <Col className="cards m-auto">
-          <Card style={{ width: "50rem" }}>
+        <Col className="card m-auto">
+          <Card style={{ width: "25rem" }}>
             <Card.Img variant="top" src={picture} />
 
             <Card.Title>{name}</Card.Title>
