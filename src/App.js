@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Blog from "./Pages/Blog/Blog";
 import AllCourse from "./Pages/Courses/AllCourse";
-import Main from "./Componed/Main";
+import Main from "./components/Main";
 import Login from "./LogIn-Register/Login";
 import Faq from "./Pages/FaQ/Faq";
 import Register from "./LogIn-Register/Register";

@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
-import "./Card.css";
+import "./Cards.css";
 const Cards = ({ pro }) => {
   const { name, picture, title, price, _id } = pro;
   // console.log(pro);

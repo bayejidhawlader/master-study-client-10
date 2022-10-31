@@ -2,8 +2,6 @@
 
 [Master Study.](https://assinment-master-sudy.web.app/).
 
-## Available Scripts
-
 # I'll make a website name Master Study
 
 # also, the website title name is Master Study and adds a favicon to this website
