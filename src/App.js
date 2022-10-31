@@ -9,7 +9,7 @@ import Register from "./LogIn-Register/Register";
 import Courses from "./Pages/Courses/Courses";
 import Details from "./Pages/Courses/Details";
 import PrivateRoute from "./Route/PrivateRoute";
-import Home from "./Componed/Home";
+import Home from "./components/Home";
 
 function App() {
   const router = createBrowserRouter([

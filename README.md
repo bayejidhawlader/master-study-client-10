@@ -17,3 +17,7 @@
 # in this blog page, I'll add some Question and answer
 
 # On this Faq page, I'll add some Question-answer
+
+# in the courses pages total I added 6 courses
+
+# I added course details on the course page
