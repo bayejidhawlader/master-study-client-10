@@ -21,3 +21,5 @@
 # in the courses pages total I added 6 courses
 
 # I added course details on the course page
+
+# Added a 404 page, when someone searches with the wrong page or product with a URL then shows the 404 text
