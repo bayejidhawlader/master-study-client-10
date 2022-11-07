@@ -53,9 +53,9 @@ const Header = () => {
               )}
 
               {/* Dark / Light */}
-              <Nav.Link eventKey={2} href="">
+              {/* <Nav.Link eventKey={2} href="">
                 <FaToggleOff className="fs-2"></FaToggleOff>
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
